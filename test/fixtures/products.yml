@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_id: 1
+  product_name: MyGoat
+  product_image: https://media.mnn.com/assets/images/2016/07/goat-mouth-open-teeth.jpg.838x0_q80.jpg
+  product_description: This is a goat.
+
+two:
+  product_id: 2
+  product_name: MyGoat2
+  product_image: http://media.npr.org/assets/img/2014/12/14/ap798386886673_custom-247a20518bf04f86ef4457d12939f46521c8751b-s900-c85.jpg
+  product_description: This is another goat.

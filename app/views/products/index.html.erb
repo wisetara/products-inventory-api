@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<h1>Bonobos Makes Soft Shirts. But These are Pants.</h1>
+<% @products.each do |product| %>
+  <tr>
+  <h2><%= product.product_name.titleize %></h2>
+  <td><%= image_tag(product.product_image, height: '250', width: '200') %></td>
+  <td><b>Product Description:</b></td>
+  <td><%= product.product_description %></td>
+    <tr>
+      <% product.inventories.each do |inventory| %>
+      	<p><td><b>Style:</b></td>
+      	<td><%= inventory.style.titleize %></td>
+      	<td>| Waist </td>
+        <td><%= inventory.waist %></td>
+        <td>| Length </td>
+        <td><%= inventory.length %></td>
+        <td>| Count </td>
+        <td><%= inventory.count %></td></p>
+      <% end %>
+    </tr>
+  </tr>
+<% end %>
